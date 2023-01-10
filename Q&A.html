@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/community.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&display=swap');</style>
+    <script src="https://kit.fontawesome.com/690b2be073.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <header id="header">
+            <div class="header_wrapper">
+                <div class="header_main">
+                    <div class="header_logo">
+                        <a href="main.html">
+                            <img src="img/jtlogo.jpg" alt="Japan Travel">
+                        </a>
+                    </div>
+                    <div class="header_sub_logo">
+                        <img src="img/sub_logo.png" alt="Japan Travel">
+                    </div>
+                </div>
+                <div class="header_menu">
+                    <div class="header_main_menu">
+                        <ul>
+                            <li class="header_main_menu_area">
+                                <span>일본의 지역</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="hokkaido.html">훗카이도</a>
+                                        </li>
+                                        <li>
+                                            <a href="tohoku.html">도호쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="kanto.html">간토</a>
+                                        </li>
+                                        <li>
+                                            <a href="chubu.html">주부</a>
+                                        </li>
+                                        <li>
+                                            <a href="kansai.html">간사이</a>
+                                        </li>
+                                        <li>
+                                            <a href="chugoku.html">주고쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="shikoku.html">시고쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="kyushu.html">규슈</a>
+                                        </li>
+                                        <li>
+                                            <a href="okinawa.html">오키나와</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_main_menu_season">
+                                <span>일본의 계절</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="jan.html">
+                                                1월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="feb.html">
+                                                2월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mar.html">
+                                                3월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="apr.html">
+                                                4월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="may.html">
+                                                5월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jun.html">
+                                                6월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jul.html">
+                                                7월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="aug.html">
+                                                8월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="sep.html">
+                                                9월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="oct.html">
+                                                10월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="nov.html">
+                                                11월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="dec.html">
+                                                12월의 일본
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_main_menu_community">
+                                <span>커뮤니티</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="news.html">최신뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="Q&A.html">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="review.html">여행후기</a>
+                                        </li>
+                                        <li>
+                                            <a href="board.html">자유게시판</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <script>
+                        $('.header_main_menu_area span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','400px')
+                            $('.header_main_menu_area ul li').css('display','block')
+                        })
+                        $('.header_main_menu_season span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','450px')
+                            $('.header_main_menu_season ul li').css('display','block')
+                        })
+                        $('.header_main_menu_community span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','335px')
+                            $('.header_main_menu_community ul li').css('display','block')
+                        })
+                        $('header').mouseleave(function(){
+                            $('header').css('height','')
+                            $('.header_main_menu ul li ul li').css('display','none')
+                        })
+                    </script>
+                    <div class="header_sub_menu">
+                        <ul>
+                            <li>
+                                <a href="login.html">로그인</a> | <a href="join.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="sub_image">
+            <div class="sub_image_wrapper">
+                <img src="img/자유게시판.jpg" alt="Q&A 게시판">
+            </div>
+            <div class="sub_image_title_wrapper">
+                <h1>
+                    <span class="sub_image_title">Q&A 게시판</span><br>
+                    <div class="sub_image_text_wrapper">
+                        <span class="sub_image_text">일본 여행과 관련된 질문과 답변을 주고 받으세요!</span>
+                    </div>    
+                </h1>
+            </div>
+        </div>
+        <div id="board">
+            <div class="board_wrap">
+                <div class="board_list_wrap">
+                    <div class="board_list">
+                        <div class="top">
+                            <div class="num">번호</div>
+                            <div class="title">제목</div>
+                            <div class="writer">글쓴이</div>
+                            <div class="date">작성일</div>
+                            <div class="count">조회</div>
+                        </div>
+                        <div class="list">
+                            <div class="num">1</div>
+                            <div class="title"><a href="view.html">제목이 들어갑니다.</a></div>
+                            <div class="writer">박형우</div>
+                            <div class="date">2022-11-16</div>
+                            <div class="count">32</div>
+                        </div>
+                        <div class="list">
+                            <div class="num">2</div>
+                            <div class="title"><a href="view.html">제목이 들어갑니다.</a></div>
+                            <div class="writer">박형우</div>
+                            <div class="date">2022-11-16</div>
+                            <div class="count">32</div>
+                        </div>
+                        <div class="list">
+                            <div class="num">3</div>
+                            <div class="title"><a href="view.html">제목이 들어갑니다.</a></div>
+                            <div class="writer">박형우</div>
+                            <div class="date">2022-11-16</div>
+                            <div class="count">32</div>
+                        </div>
+                        <div class="list">
+                            <div class="num">4</div>
+                            <div class="title"><a href="view.html">제목이 들어갑니다.</a></div>
+                            <div class="writer">박형우</div>
+                            <div class="date">2022-11-16</div>
+                            <div class="count">32</div>
+                        </div>
+                        <div class="list">
+                            <div class="num">5</div>
+                            <div class="title"><a href="view.html">제목이 들어갑니다.</a></div>
+                            <div class="writer">박형우</div>
+                            <div class="date">2022-11-16</div>
+                            <div class="count">32</div>
+                        </div>
+                        <div class="list">
+                            <div class="num">6</div>
+                            <div class="title"><a href="view.html">제목이 들어갑니다.</a></div>
+                            <div class="writer">박형우</div>
+                            <div class="date">2022-11-16</div>
+                            <div class="count">32</div>
+                        </div>
+                        <div class="list">
+                            <div class="num">7</div>
+                            <div class="title"><a href="view.html">제목이 들어갑니다.</a></div>
+                            <div class="writer">박형우</div>
+                            <div class="date">2022-11-16</div>
+                            <div class="count">32</div>
+                        </div>
+                        <div class="list">
+                            <div class="num">8</div>
+                            <div class="title"><a href="view.html">제목이 들어갑니다.</a></div>
+                            <div class="writer">박형우</div>
+                            <div class="date">2022-11-16</div>
+                            <div class="count">32</div>
+                        </div>
+                        <div class="list">
+                            <div class="num">9</div>
+                            <div class="title"><a href="view.html">제목이 들어갑니다.</a></div>
+                            <div class="writer">박형우</div>
+                            <div class="date">2022-11-16</div>
+                            <div class="count">32</div>
+                        </div>
+                        <div class="list">
+                            <div class="num">10</div>
+                            <div class="title"><a href="view.html">제목이 들어갑니다.</a></div>
+                            <div class="writer">박형우</div>
+                            <div class="date">2022-11-16</div>
+                            <div class="count">32</div>
+                        </div>
+                    </div>
+                    <!-- 페이지버튼 -->
+                    <div class="board_page">
+                        <a href="#" class="bt first">&lt;&lt;</a>
+                        <a href="#" class="bt prev">&lt;</a>
+                        <a href="" class="num on">1</a>
+                        <a href="" class="num">2</a>
+                        <a href="" class="num">3</a>
+                        <a href="" class="num">4</a>
+                        <a href="" class="num">5</a>
+                        <a href="#" class="bt next">&gt;</a>
+                        <a href="#" class="bt last">&gt;&gt;</a>
+                    </div>
+                    <div class="bt_wrap">
+                        <a href="write.html" class="on">글쓰기</a>
+                        <!-- <a href="#">수정</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_link_wrapper">
+                <div class="footer_link">
+                    <ul>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">쿠키 정책</a></li>
+                        <li><a href="#">이용 약관</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_main_wrapper">
+                <div class="footer_main">
+                    <h3>Copyrightⓒ JapanTravel. All rights reserved.</h3>
+                </div>
+            </div>
+        </footer>   
+</body>
+</html>

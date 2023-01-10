@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/area.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&display=swap');</style>
+    <script src="https://kit.fontawesome.com/690b2be073.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+    <body>
+        <header id="header">
+            <div class="header_wrapper">
+                <div class="header_main">
+                    <div class="header_logo">
+                        <a href="main.html">
+                            <img src="img/jtlogo.jpg" alt="Japan Travel">
+                        </a>
+                    </div>
+                    <div class="header_sub_logo">
+                        <img src="img/sub_logo.png" alt="Japan Travel">
+                    </div>
+                </div>
+                <div class="header_menu">
+                    <div class="header_main_menu">
+                        <ul>
+                            <li class="header_main_menu_area">
+                                <span>일본의 지역</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="hokkaido.html">훗카이도</a>
+                                        </li>
+                                        <li>
+                                            <a href="tohoku.html">도호쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="kanto.html">간토</a>
+                                        </li>
+                                        <li>
+                                            <a href="chubu.html">주부</a>
+                                        </li>
+                                        <li>
+                                            <a href="kansai.html">간사이</a>
+                                        </li>
+                                        <li>
+                                            <a href="chugoku.html">주고쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="shikoku.html">시고쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="kyushu.html">규슈</a>
+                                        </li>
+                                        <li>
+                                            <a href="okinawa.html">오키나와</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_main_menu_season">
+                                <span>일본의 계절</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="jan.html">
+                                                1월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="feb.html">
+                                                2월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mar.html">
+                                                3월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="apr.html">
+                                                4월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="may.html">
+                                                5월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jun.html">
+                                                6월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jul.html">
+                                                7월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="aug.html">
+                                                8월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="sep.html">
+                                                9월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="oct.html">
+                                                10월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="nov.html">
+                                                11월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="dec.html">
+                                                12월의 일본
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_main_menu_community">
+                                <span>커뮤니티</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="news.html">최신뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="Q&A.html">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="review.html">여행후기</a>
+                                        </li>
+                                        <li>
+                                            <a href="board.html">자유게시판</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <script>
+                        $('.header_main_menu_area span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','400px')
+                            $('.header_main_menu_area ul li').css('display','block')
+                        })
+                        $('.header_main_menu_season span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','450px')
+                            $('.header_main_menu_season ul li').css('display','block')
+                        })
+                        $('.header_main_menu_community span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','335px')
+                            $('.header_main_menu_community ul li').css('display','block')
+                        })
+                        $('header').mouseleave(function(){
+                            $('header').css('height','')
+                            $('.header_main_menu ul li ul li').css('display','none')
+                        })
+                    </script>
+                    <div class="header_sub_menu">
+                        <ul>
+                            <li>
+                                <a href="login.html">로그인</a> | <a href="join.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main_image">
+            <div class="main_image_wrapper">
+                <img src="img/2월_메인.jpg" alt="2월">
+            </div>
+            <h1>
+                <span class="main_image_title">2월의 일본</span><br>
+                <div class="main_image_text_wrapper">
+                    <span class="main_image_text">늦겨울의 신나는 활동</span>
+                </div>    
+            </h1>
+        </div>
+        <div id="article">
+            <div class="article_wrapper">
+                <h2 class="article_title">2월의 일본</h2>
+                <p class="article_text">
+                    2월은 일 년 중 가장 추운 달이므로 신체 활동을 하고 체온 보호를 위해 옷을 든든하게 입어야 합니다. 계절 축제는 보통 두 가지가 대표적입니다. 하나는 겨울에 대단한 인기를 자랑하는 삿포로 눈축제이고, 또 하나는 끝없는 활력을 자랑하는 사이다이지 에요(나체 축제)입니다. 겨울 스포츠는 눈 쌓인 주말을 보내는 데 좋은 방법입니다. 일본 최고의 설상 스포츠 지역은 2월 내내 대체로 최상의 활강 코스의 상태를 자랑합니다.                </p>
+                <p class="article_text">
+                    일본을 대표하는 여러 특징 중에서도 단연 큰 부분을 차지하는 것이 뚜렷한 사계절의 변화입니다. 봄, 여름, 가을 그리고 겨울 모두 각각의 특색을 잘 간직하고 있고, 앞으로도 특색 있는 모습을 계속 간직해 나갈 것입니다. 일본의 전통 달력에서는 흥미롭게도 2월 4일에 봄이 시작됩니다. 여기에 속지 마세요! 여전히 정말 춥고, 눈까지 내리는 지역도 있으니 옷을 잘 챙겨 입으시기 바랍니다.                </p>
+            </div>    
+        </div>
+        <footer>
+            <div class="footer_link_wrapper">
+                <div class="footer_link">
+                    <ul>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">쿠키 정책</a></li>
+                        <li><a href="#">이용 약관</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_main_wrapper">
+                <div class="footer_main">
+                    <h3>Copyrightⓒ JapanTravel. All rights reserved.</h3>
+                </div>
+            </div>
+        </footer>   
+    </body>
+</html>

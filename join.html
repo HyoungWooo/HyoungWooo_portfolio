@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/join.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&display=swap');</style>
+    <script src="https://kit.fontawesome.com/690b2be073.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <header id="header">
+            <div class="header_wrapper">
+                <div class="header_main">
+                    <div class="header_logo">
+                        <a href="main.html">
+                            <img src="img/jtlogo.jpg" alt="Japan Travel">
+                        </a>
+                    </div>
+                    <div class="header_sub_logo">
+                        <img src="img/sub_logo.png" alt="Japan Travel">
+                    </div>
+                </div>
+                <div class="header_menu">
+                    <div class="header_main_menu">
+                        <ul>
+                            <li class="header_main_menu_area">
+                                <span>일본의 지역</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="hokkaido.html">훗카이도</a>
+                                        </li>
+                                        <li>
+                                            <a href="tohoku.html">도호쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="kanto.html">간토</a>
+                                        </li>
+                                        <li>
+                                            <a href="chubu.html">주부</a>
+                                        </li>
+                                        <li>
+                                            <a href="kansai.html">간사이</a>
+                                        </li>
+                                        <li>
+                                            <a href="chugoku.html">주고쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="shikoku.html">시고쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="kyushu.html">규슈</a>
+                                        </li>
+                                        <li>
+                                            <a href="okinawa.html">오키나와</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_main_menu_season">
+                                <span>일본의 계절</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="jan.html">
+                                                1월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="feb.html">
+                                                2월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mar.html">
+                                                3월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="apr.html">
+                                                4월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="may.html">
+                                                5월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jun.html">
+                                                6월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jul.html">
+                                                7월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="aug.html">
+                                                8월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="sep.html">
+                                                9월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="oct.html">
+                                                10월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="nov.html">
+                                                11월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="dec.html">
+                                                12월의 일본
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_main_menu_community">
+                                <span>커뮤니티</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="news.html">최신뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="Q&A.html">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="review.html">여행후기</a>
+                                        </li>
+                                        <li>
+                                            <a href="board.html">자유게시판</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <script>
+                        $('.header_main_menu_area span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','400px')
+                            $('.header_main_menu_area ul li').css('display','block')
+                        })
+                        $('.header_main_menu_season span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','450px')
+                            $('.header_main_menu_season ul li').css('display','block')
+                        })
+                        $('.header_main_menu_community span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','335px')
+                            $('.header_main_menu_community ul li').css('display','block')
+                        })
+                        $('header').mouseleave(function(){
+                            $('header').css('height','')
+                            $('.header_main_menu ul li ul li').css('display','none')
+                        })
+                    </script>
+                    <div class="header_sub_menu">
+                        <ul>
+                            <li>
+                                <a href="login.html">로그인</a> | <a href="join.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="sub_image">
+            <div class="sub_image_wrapper">
+                <img src="img/로그인_메인.jpg" alt="로그인">
+            </div>
+            <div id="join">
+                <div class="join_wrapper">
+                    <div class="join_title">
+                        <h2>회원가입</h2>
+                    </div>
+                    <div class="join_main">
+                        <div class="join_main_wrapper">
+                            <div class="join_text">
+                                아이디 
+                            </div>
+                            <div class="join_id_input">
+                                <input type="text" class="join_input" maxlength="20" size="15" name="user_id">
+                            </div>
+                        </div>
+                        <div class="join_main_wrapper">
+                            <div class="join_text">
+                                비밀번호
+                            </div>  
+                            <div class="join_pw_input">
+                                <input type="password" class="join_input" maxlength="20" size="15" name="user_pw">
+                            </div>
+                        </div>
+                        <div class="join_main_wrapper">
+                            <div class="join_text">
+                                비밀번호 확인
+                            </div>  
+                            <div class="join_pw_input">
+                                <input type="password" class="join_input" maxlength="20" size="15" name="user_pw">
+                            </div>
+                        </div>
+                        <div class="join_main_wrapper">
+                            <div class="join_text">
+                                닉네임
+                            </div>  
+                            <div class="join_nickname_input">
+                                <input type="text" class="join_input" maxlength="20" size="15" name="user_nickname">
+                            </div>
+                        </div>
+                        <div class="join_main_wrapper">
+                            <div class="join_text">
+                                이메일 주소
+                            </div>  
+                            <div class="join_email_input">
+                                <input type="text" class="join_input" maxlength="20" size="15" name="user_email">
+                            </div>
+                        </div>
+                        <div class="join_side_wrapper">
+                            <input type="submit" class="join_btn" value="회원가입">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="community">
+            <div class="community_wrapper">
+                <div class="community_box">
+                    <div class="community_title">
+                        <div class="community_title_text">
+                            <h2>Q&A</h2>
+                        </div>
+                        <div class="community_title_link">
+                            <a href="Q&A.html">+</a>
+                        </div>
+                    </div>
+                    <a href="Q&A.html">
+                        <div class="community_main">
+                            <div class="community_main_image">
+                                <i class="fa-regular fa-comments"></i>
+                            </div>
+                            <div class="community_main_text">
+                                <p>
+                                    일본 여행과 관련된 질문과 답변을 주고 받으세요!
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="community_box">
+                    <div class="community_title">
+                        <div class="community_title_text">
+                            <h2>여행후기</h2>
+                        </div>
+                        <div class="community_title_link">
+                            <a href="Q&A.html">+</a>
+                        </div>
+                    </div>
+                    <a href="review.html">
+                        <div class="community_main">
+                            <div class="community_main_image">
+                                <i class="fa-solid fa-camera-retro"></i>
+                            </div>
+                            <div class="community_main_text">
+                                <p>
+                                    일본 관광객들이 남긴 생생한 사진과 후기!
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="community_box">
+                    <div class="community_title">
+                        <div class="community_title_text">
+                            <h2>자유게시판</h2>
+                        </div>
+                        <div class="community_title_link">
+                            <a href="Q&A.html">+</a>
+                        </div>
+                    </div>
+                    <a href="board.html">
+                        <div class="community_main">
+                            <div class="community_main_image">
+                                <i class="fa-regular fa-handshake"></i>
+                            </div>
+                            <div class="community_main_text">
+                                <p>
+                                    일본 여행과 관련된 주제를 자유롭게 얘기하는 공간입니다!
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_link_wrapper">
+                <div class="footer_link">
+                    <ul>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">쿠키 정책</a></li>
+                        <li><a href="#">이용 약관</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_main_wrapper">
+                <div class="footer_main">
+                    <h3>Copyrightⓒ JapanTravel. All rights reserved.</h3>
+                </div>
+            </div>
+        </footer>   
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+#main_image {
+    position: relative;
+    width: 100vw;
+}
+.main_image_wrapper img{
+    width: 100%;
+    margin-top: 279px;
+}
+#main_image h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    position: absolute;
+    top: 45%;
+    margin-left: 150px;
+}
+.main_image_title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.main_image_text_wrapper {
+    width: 500px;
+}
+.main_image_text {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+/* 지역 소개 */
+#article {
+    width: 100%;
+    margin-top: 100px;
+}
+.article_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.article_title {
+    font-family: 'Jua', sans-serif;
+    font-size: 3rem;
+}
+.article_text {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2rem;
+    margin-top: 50px;
+}

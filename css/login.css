@@ -1,0 +1,91 @@
+#sub_image {
+    position: relative;
+    width: 100vw;
+}
+.sub_image_wrapper img{
+    width: 100%;
+    margin-top: 279px;
+}
+
+/* 로그인 */
+#login {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+.login_wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+.login_title {
+    padding-bottom: 20px;
+}
+.login_title h2{
+    color: white;
+    font-size: 2.0rem;
+    font-family: 'Jua', sans-serif;
+}
+.login_main {
+    background-color: white;
+    padding: 50px 75px 50px 75px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+}
+.login_main_wrapper {
+    display: flex;
+    margin-bottom: 25px;
+}
+.login_id_text {
+    width: 100px;
+    color: #282828;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.login_input {
+    float: right;
+    width: 500px;
+    height: 35px;
+    background-color: #f5f5f5;
+    border: 1px solid #bfbfbf;
+    border-radius: 0%;
+}
+.login_pw_text {
+    width: 100px;
+    color: #282828;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.join_text {
+    color: #282828;
+    font-size: 0.9em;
+    letter-spacing: -1px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+}
+.find_id_text {
+    font-size: 0.875em;
+    letter-spacing: -1px;
+    color: #5e5e5e;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.auto_login {
+    cursor: pointer;
+    margin-left: 200px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.auto_login_text {
+    color: #282828;
+    font-size: 0.875em;
+}
+.login_btn {
+    cursor: pointer;
+    background-color: #282828;
+    color: white;
+    font-size: 1.05em;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 15px;
+    width: 110px;
+    height: 40px;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/area.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&display=swap');</style>
+    <script src="https://kit.fontawesome.com/690b2be073.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+    <body>
+        <header id="header">
+            <div class="header_wrapper">
+                <div class="header_main">
+                    <div class="header_logo">
+                        <a href="main.html">
+                            <img src="img/jtlogo.jpg" alt="Japan Travel">
+                        </a>
+                    </div>
+                    <div class="header_sub_logo">
+                        <img src="img/sub_logo.png" alt="Japan Travel">
+                    </div>
+                </div>
+                <div class="header_menu">
+                    <div class="header_main_menu">
+                        <ul>
+                            <li class="header_main_menu_area">
+                                <span>일본의 지역</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="hokkaido.html">훗카이도</a>
+                                        </li>
+                                        <li>
+                                            <a href="tohoku.html">도호쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="kanto.html">간토</a>
+                                        </li>
+                                        <li>
+                                            <a href="chubu.html">주부</a>
+                                        </li>
+                                        <li>
+                                            <a href="kansai.html">간사이</a>
+                                        </li>
+                                        <li>
+                                            <a href="chugoku.html">주고쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="shikoku.html">시고쿠</a>
+                                        </li>
+                                        <li>
+                                            <a href="kyushu.html">규슈</a>
+                                        </li>
+                                        <li>
+                                            <a href="okinawa.html">오키나와</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_main_menu_season">
+                                <span>일본의 계절</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="jan.html">
+                                                1월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="feb.html">
+                                                2월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mar.html">
+                                                3월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="apr.html">
+                                                4월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="may.html">
+                                                5월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jun.html">
+                                                6월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="jul.html">
+                                                7월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="aug.html">
+                                                8월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="sep.html">
+                                                9월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="oct.html">
+                                                10월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="nov.html">
+                                                11월의 일본
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="dec.html">
+                                                12월의 일본
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_main_menu_community">
+                                <span>커뮤니티</span>
+                                <div class="header_dropdown_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="news.html">최신뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="Q&A.html">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="review.html">여행후기</a>
+                                        </li>
+                                        <li>
+                                            <a href="board.html">자유게시판</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <script>
+                        $('.header_main_menu_area span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','400px')
+                            $('.header_main_menu_area ul li').css('display','block')
+                        })
+                        $('.header_main_menu_season span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','450px')
+                            $('.header_main_menu_season ul li').css('display','block')
+                        })
+                        $('.header_main_menu_community span').hover(function(){
+                            $('.header_main_menu ul li ul li').css('display','none')
+                            $('header').css('height','335px')
+                            $('.header_main_menu_community ul li').css('display','block')
+                        })
+                        $('header').mouseleave(function(){
+                            $('header').css('height','')
+                            $('.header_main_menu ul li ul li').css('display','none')
+                        })
+                    </script>
+                    <div class="header_sub_menu">
+                        <ul>
+                            <li>
+                                <a href="login.html">로그인</a> | <a href="join.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main_image">
+            <div class="main_image_wrapper">
+                <img src="img/오키나와_메인.jpg" alt="오키나와">
+            </div>
+            <h1>
+                <span class="main_image_title">오키나와</span><br>
+                <div class="main_image_text_wrapper">
+                    <span class="main_image_text">일본 내에서 유일하게 아열대 지역에 속한 오키나와는 일년 내내 온난한 기후를 자랑하며 푸르게 펼쳐진 바다는 알록달록한 열대어와 산호초 등이 살아 숨쉬는 생명의 보고입니다</span>
+                </div>    
+            </h1>
+        </div>
+        <div id="article">
+            <div class="article_wrapper">
+                <h2 class="article_title">오키나와</h2>
+                <p class="article_text">
+                    오키나와는 일본의 도도부현중 최남서단에 위치한 지역으로 현 단위로 가장 남쪽이며, 과거 류큐 왕국이라 부르던 섬나라였고, 이곳의 수도의 역할은 현재의 오키나와 현의 중심지인 나하시에 있는 슈리였다.
+                </p>
+                <p class="article_text">
+                    오키나와 본도외 160여개 섬지역까지 '오키나와 지방' 이라는 이름으로 묶인 것은 그리 오래 되지 않았다. 본국인 일본보다 거리상 오히려 대만과 가까운 지역이라 의외로 중화민국과 거래나 왕래가 많은 지역이다.
+                </p>
+            </div>    
+        </div>
+        <footer>
+            <div class="footer_link_wrapper">
+                <div class="footer_link">
+                    <ul>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">쿠키 정책</a></li>
+                        <li><a href="#">이용 약관</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_main_wrapper">
+                <div class="footer_main">
+                    <h3>Copyrightⓒ JapanTravel. All rights reserved.</h3>
+                </div>
+            </div>
+        </footer>   
+    </body>
+</html>

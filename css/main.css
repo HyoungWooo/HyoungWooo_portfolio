@@ -1,0 +1,421 @@
+
+/* 메인 이미지 */
+
+#main_image {
+    position: relative;
+    width: 100%;
+    margin-top: 279px;
+}
+.main_image_wrapper {
+    width: 100%;
+}
+.main_image_wrapper img {
+    width: 100%;
+}
+.main_image_button {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main_image_left_button {
+    position: absolute;
+    left: 10px;
+    background-color: transparent;
+    color: #f5f5f5;
+    border: transparent;
+    cursor: pointer;
+    font-size: 2.0rem;
+    text-shadow: 1px 1px 3px #696969;
+}
+.main_image_right_button {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    color: #f5f5f5;
+    border: transparent;
+    cursor: pointer;
+    font-size: 2.0rem;
+    text-shadow: 1px 1px 3px #696969;
+}
+#main_image h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    position: absolute;
+    top: 40%;
+    margin-left: 150px;
+}
+.main_image_title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.main_image_text_wrapper {
+    width: 500px;
+    margin-top: 15px;
+}
+.main_image_text {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+/* 뉴스 */
+
+#news {
+    width: 100%;
+    margin-top: 100px;
+}
+.news_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.news_title {
+    width: 1200px;
+    display: flex;
+    font-size: 2.0rem;
+    font-family: 'Jua', sans-serif;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+}
+.news_title a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 1025px;
+    padding-top: 24px;
+}
+.news_title a:hover {
+    color: #ef7979;
+}
+.news_contents_wrapper {
+    width: 1200px;
+    display: flex;
+    margin-top: 20px;
+}
+.news_contents {
+    width: 350px;
+    margin-right: 75px;
+}
+.news_contents a {
+    display: flex;
+    width: 350px;
+}
+.news_contents a:hover {
+    color: #ef7979;
+}
+.news_text_wrapper {
+    width: 200px;
+    margin-right: 25px;
+}
+.news_text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.news_date {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.news_image_wrapper {
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.news_image_wrapper img{
+    width: 100%;
+}
+
+/* 지도 */
+
+#jpMap {
+    position: relative;
+    background-color: white;
+    align-content: center;
+}
+.jpMap-wrapper {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1200px;
+}
+.contents-wrapper {
+    width: 500px;
+}
+.contents-wrapper h2{
+    font-size: 2.0rem;
+    margin : 20px 0 20px 0;
+    font-family: 'Jua', sans-serif;
+}
+#map {
+    margin-left: 100px;
+}
+#map path {
+    transition: ease fill 0.5s;
+}
+.contents-main {
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+.contents-button {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+.left-btn {
+    left: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0 50px 50px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.right-btn {
+    right: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50px 0px 0px 50px;
+    padding: 10px 10px 10px 10px;
+}
+.contents-button button {
+    border: none;
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 20;
+}
+.contents-area {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.contents-img {
+    overflow: hidden;
+}
+.contents-area a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.8s ease-out;
+    height: 400px;
+}
+.contents-area a:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.contents-area img {
+    width: 100%;
+    transition: all ease-out 0.8s;
+    overflow: hidden;
+}
+.contents-title {
+    background: #282828;
+    color: #e9e9e9;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding: 15px;
+    width: 100%;
+    height: 100px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.contents-title h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 지역 색 */
+
+.g-area1{
+    fill:#ef7979;
+    fill-opacity:1;
+    fill-rule:evenodd;
+    stroke:none;
+    cursor: pointer;
+}
+.g-area2{
+    fill:#efe979;
+    fill-opacity:1;
+    cursor: pointer;
+}
+.g-area3{
+    fill:#87ef79;
+    fill-opacity:1;
+    cursor: pointer;
+}
+.g-area4 {
+    fill:#79efdb;
+    fill-opacity:1;
+    cursor: pointer; 
+}
+.g-area5 {
+    fill:#9579ef;
+    fill-opacity:1;
+    cursor: pointer;
+}
+.g-area6{
+    fill:#efb179;
+    fill-opacity:1;
+    stroke:none;
+    cursor: pointer;
+}
+.g-area7{
+   fill:#cc79ef;
+   fill-opacity:1;
+   fill-rule:evenodd;
+   stroke:none;
+   cursor: pointer;
+}
+.g-area8{
+    fill:#b4b4b4;
+    fill-opacity:1;
+    fill-rule:evenodd;
+    stroke:none;
+    cursor: pointer
+ }
+.g-area9{
+    fill:#b4b4b4;
+    fill-opacity:1;
+    fill-rule:evenodd;
+    stroke:none;
+    cursor: pointer;
+}
+.fill-map {
+    fill: #7d7d7d;
+}
+
+/* 계절 별 일본 */
+
+#season {
+    width: 100%;
+    margin-top: 100px;
+}
+.season_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.season_title {
+    width: 1200px;
+    font-size: 2.0rem;
+    font-family: 'Jua', sans-serif;
+}
+.season_img_wrapper {
+    width: 1200px;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+.season_img {
+    width: 285px;
+    height: 285px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.season_img img{
+    height: 285px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.8s ease-out;
+}
+.season_img_title_wrapper {
+    position: absolute;
+    top: 45%;
+    width: 285px;
+}
+.season_img_title {
+    width: 165px;
+    margin: 0 60px 0 60px;
+    color: white;
+    font-size: 2.0rem;
+    font-family: 'Jua', sans-serif;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.season_img_title h2 {
+    z-index: 10;
+    text-align: center;
+}
+.season_img img:hover{
+    transform: scale(1.15);
+    transition: 0.9s;
+}
+
+/* 커뮤니티 */
+
+#community {
+    width: 100%;
+    margin-top: 100px;
+}
+.community_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.community_box {
+    width: 350px;
+    margin-right: 75px;
+}
+.community_title {
+    width: 350px;
+    height: 50px;
+    display: flex;
+}
+.community_title_text {
+    width: 250px;
+}
+.community_title h2 {
+    font-size: 2rem;
+    font-family: 'Jua', sans-serif;
+}
+.community_title_link {
+    width: 100px;
+}
+.community_title a {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 80px;
+    font-family: 'Jua', sans-serif;
+}
+.community_title a:hover {
+    color: #ef7979;
+}
+.community_main {
+    display: flex;
+    border: 1px solid #ebebeb;
+    box-shadow: 0px 0px 6px 4px rgb(0 0 0 / 5%);
+}
+.community_main_image {
+    width: 150px;
+    color: #282828;
+    font-size: 5.5rem;
+    text-align: center;
+    padding: 0 20px 20px 10px;
+}
+.community_main_text {
+    width: 170px;
+    padding: 20px 10px 0 0;
+    font-size: 1.1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+

@@ -1,0 +1,165 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, summary, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+em {
+    font-style: normal;
+}
+element.style {
+    opacity: 1;
+    height: 407px;
+    transform: translate3d(0px, -74px, 0px);
+}
+header div, footer div {
+    display: block;
+}
+header a, footer a {
+    text-decoration: none;
+}
+
+/* 헤더 */
+header {
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;
+    z-index: 100;
+}
+.header_main {
+    display: flex;
+}
+.header_logo {
+    width: 200px;
+    margin-top: 50px;
+}
+.header_logo img {
+    width: 200px;
+}
+.header_sub_logo {
+    width: 450px;
+    margin-left: 500px;
+}
+.header_sub_logo img {
+    width: 450px;
+}
+.header_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header_menu {
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    position: relative;
+}
+.header_main_menu {
+    width: 720px;
+    height: 100px;
+}
+.header_main_menu ul li {
+    float: left;
+    width: 240px;
+    text-align: center;
+    padding: 36px 0 32px 0;
+}
+.header_main_menu span {
+    color: #282828;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 20px 32px 20px;
+    border-bottom: 4px solid transparent;
+    font-family: 'Jua', sans-serif;
+}
+.header_main_menu span:hover {
+    border-bottom: 4px solid #282828;
+}
+.header_dropdown_menu {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    width: 720px;
+}
+.header_main_menu ul li ul {
+    margin-top: 40px;
+    width: 1200px;
+}
+.header_main_menu ul li ul li {
+    display: none;
+    padding: 15px 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.header_main_menu ul li ul li:hover {
+    color: #ef7979;
+}
+.header_sub_menu li {
+    float: left;
+    width: 240px;
+    text-align: center;
+    color: #282828;
+    font-size: 1.5rem;
+    padding-top: 32px;
+    font-family: 'Jua', sans-serif;
+}
+.header_sub_menu i {
+    margin-left: 10px;
+}
+
+/* 푸터 */
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.footer_link_wrapper{
+    background-color: #383838;
+    height: 80px;
+}
+.footer_link {
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer_link ul li {
+    float: left;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding-top: 29px;
+}
+.footer_link ul li:hover {
+    color: #ef7979;
+}
+.footer_main_wrapper{
+    background-color: #282828;
+    height: 225px;
+}
+.footer_main{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
